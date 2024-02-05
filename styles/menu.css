@@ -1,0 +1,26 @@
+.options{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   }
+   button{
+    background-color: rgb(237, 234, 234);
+    border: none;
+    border-radius: 6px;
+    padding: 4px 6px 4px 6px;
+    flex-shrink: 0;
+    font-size: 14px;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: rgb(227, 227, 227);
+   }
+   .all-button{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+   }
+   .all-button:hover{
+    background-color: black;
+    color: white;
+   }

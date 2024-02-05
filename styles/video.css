@@ -1,0 +1,122 @@
+
+.thumbnail{
+   width: 100%;
+   border-radius: 10px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px ;
+    margin-top: 20px;
+}
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 10px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;  
+}
+
+
+.profile-picture{
+    width: 36px;
+    border-radius: 50px;
+
+}
+.channel-picture{
+    position: relative;
+   
+}
+.channel-info{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 0.01px gray;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 100;
+}
+.channel-picture:hover .channel-info{
+    opacity: 1;
+}
+.channel-details{
+    margin-left: 10px;
+}
+.channel-author{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+}
+
+.channel-count{
+    margin-top: 4px;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.channel-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+.video-author,
+.video-stats{
+    font-size: 12px;
+    color: rgb(96,96,96);
+}
+.video-author{
+    margin-bottom: 4px;
+}
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 4px 4px 4px;
+    border-radius: 2px;
+}
+@media (max-width:600px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .video-title{
+        font-size: 16px;
+    }
+    .video-author,
+    .video-title{
+        font-size: 14px;
+    }
+}
